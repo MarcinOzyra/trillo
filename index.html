@@ -77,11 +77,53 @@
               </a>
             </li>
           </ul>
-          <div class="legal">
-            &copy; 2017 by Trillo. All rights reserved.
-          </div>
+          <div class="legal">&copy; 2017 by Trillo. All rights reserved.</div>
         </nav>
-        <main class="hotel-view">Hotel view</main>
+        <main class="hotel-view">
+          <div class="gallery">
+            <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure -->
+            <figure class="gallery__item">
+              <img class="gallery__image" src="img/hotel-1.jpg" alt="Photo of hotel 1" />
+            </figure>
+            <figure class="gallery__item">
+              <img class="gallery__image" src="img/hotel-2.jpg" alt="Photo of hotel 2" />
+            </figure>
+            <figure class="gallery__item">
+              <img class="gallery__image" src="img/hotel-3.jpg" alt="Photo of hotel 3" />
+            </figure>
+          </div>
+          <section class="hotel-details">
+            <div class="hotel-details__left">
+              <h1 class="hotel-details__name">Hotel Las Palmas</h1>
+              <svg class="hotel-details__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="hotel-details__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="hotel-details__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="hotel-details__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="hotel-details__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div class="hotel-details__right">
+              <svg class="hotel-details__icon">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <!-- <button class="btn-inline">Albufeira, Portugal</button> -->
+              <span class="hotel-details__location">Albufeira, Portugal</span>
+              <div class="hotel-details__rating">
+                <span class="hotel-details__rating-number">8.6</span>
+                <span class="hotel-details__rating-votes">429 votes</span>
+              </div>
+            </div>
+          </section>
+        </main>
       </div>
     </div>
   </body>
